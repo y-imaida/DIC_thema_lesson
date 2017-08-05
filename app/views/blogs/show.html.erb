@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Name:</strong>
+  <%= User.find(@blog.user_id).name %>
+</p>
+
+<p>
   <strong>Title:</strong>
   <%= @blog.title %>
 </p>
